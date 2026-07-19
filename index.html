@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Video Review Only Notification Roles</title>
+<style>
+  :root {
+    --navy: #2f5b8a;
+    --navy-dark: #24476c;
+    --row-alt: #f4f7fb;
+    --border: #dfe6ee;
+    --text: #1c2733;
+    --muted: #5b6b7c;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 40px 20px;
+    background: #eef2f6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+  }
+
+  .wrapper {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(30, 60, 90, 0.10);
+  }
+
+  thead.col-header th {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    text-align: left;
+    padding: 14px 20px;
+  }
+
+  tbody td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 15px;
+    line-height: 1.5;
+    vertical-align: top;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  tbody tr:nth-child(even) {
+    background: var(--row-alt);
+  }
+
+  tbody tr:hover {
+    background: #eaf1fa;
+  }
+
+  td.label {
+    font-weight: 700;
+    color: var(--navy-dark);
+    width: 20%;
+  }
+
+  td.role-cell {
+    width: 40%;
+    color: var(--text);
+  }
+
+  td.role-cell.merged {
+    width: 80%;
+  }
+
+  td.empty {
+    color: var(--muted);
+  }
+
+  td.empty::after {
+    content: "—";
+    color: #c3ccd6;
+  }
+
+  td p {
+    margin: 0 0 10px 0;
+  }
+
+  td p:last-child {
+    margin-bottom: 0;
+  }
+
+  em {
+    font-style: italic;
+    color: var(--navy-dark);
+  }
+
+  ul.outcomes {
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+  }
+
+  ul.outcomes li {
+    margin-bottom: 6px;
+  }
+
+  ul.outcomes li:last-child {
+    margin-bottom: 0;
+  }
+
+  .col-divider {
+    border-left: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <table>
+    <thead class="col-header">
+      <tr>
+        <th>Video Review Only Notification</th>
+        <th>Club Doctor Role</th>
+        <th>MDSD Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">Removal Process</td>
+        <td class="role-cell">
+          <p>Tend to the player as clinically indicated</p>
+        </td>
+        <td class="role-cell col-divider empty"></td>
+      </tr>
+      <tr>
+        <td class="label">Video Review</td>
+        <td class="role-cell merged" colspan="2">
+          <p>Review the video &amp; decide if there were any signs consistent with a possible sign of concussion requiring immediate removal from play for a <em>Detailed Off-Field HIA (including SCAT6)</em> (Category 2 signs)</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="label">Clinical Assessment</td>
+        <td class="role-cell">
+          <p>Perform a <em>Brief HIA</em> if clinically indicated</p>
+        </td>
+        <td class="role-cell col-divider">
+          <p>Perform a <em>Brief HIA</em> if required by the Club Doctor</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="label">Discussion Required</td>
+        <td class="role-cell empty"></td>
+        <td class="role-cell col-divider">
+          <p>Discuss the results with the Club Doctor if any Category 1 or Category 2 signs observed</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="label">Documentation Requirement</td>
+        <td class="role-cell">
+          <p>Complete HIA form in the SCORE App if <em>Brief HIA</em> performed</p>
+        </td>
+        <td class="role-cell col-divider empty"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
